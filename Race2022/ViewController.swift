@@ -7,11 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let carA = Car()
+        let carB = Car(n: "B", s: 2)
+        
+        
     }
 
 
