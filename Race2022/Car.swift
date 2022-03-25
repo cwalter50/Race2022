@@ -12,19 +12,22 @@ class Car
     // variables/ properties
     var name : String // Name of image too
     var speed: Double // time of animation
+    var lane: Int
     
     // initializers / constructors
     init ()
     {
         name = "A"
         speed = 1
+        lane = 1
         getRandomSpeed()
     }
     
-    init(n: String, s: Double)
+    init(n: String, s: Double, l: Int)
     {
         name = n
         speed = s
+        lane = l
         getRandomSpeed()
     }
     
