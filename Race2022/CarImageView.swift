@@ -43,4 +43,12 @@ class CarImageView: UIImageView {
     
     // Methods or tools
 
+    func resetSpeedAndPosition()
+    {
+        car.getRandomSpeed()
+        
+        let x = car.lane * 60
+        let y = Int(UIScreen.main.bounds.height - 120)
+        self.frame = CGRect(x: x, y: y, width: 50, height: 100)
+    }
 }
